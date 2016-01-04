@@ -2,6 +2,7 @@ JWT
 ===
 
 Apex implementation of JWT and JWT Bearer flow.   Requires Summer 14 release for RSA-SHA256 support.
+
 Test Coverage : 94.59%
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=ForceComDeveloper&repo=Apex_JWT">
