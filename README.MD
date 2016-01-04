@@ -79,7 +79,7 @@ String access_token = JWT.getAccessToken('https://accounts.google.com/o/oauth2/t
 ```
 
 #How to test it
-Use [jwt.io]
+Use [http://jwt.io]
 
 #How to extend it
 Extend the JWT.JWTSignStrategy class and build your own GetToken and GetAlgorithm method
