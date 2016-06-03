@@ -1,4 +1,4 @@
-global without sharing class JWT {
+public without sharing class JWT {
   public static final String JWT_HS256 = 'HS256';
   public static final String JWT_RS256 = 'RS256';
   public static final String JWT_NONE = 'none';
@@ -90,18 +90,18 @@ global without sharing class JWT {
     req.setBody('grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=' + token);
     final Http http = new Http();
     final HTTPResponse res = http.send(req);
-    String access_token = null;
+    String accessToken = null;
     if ( res.getStatusCode() == 200 ) {
       final System.JSONParser parser = System.JSON.createParser(res.getBody());
       while (parser.nextToken() != null) {
         if ((parser.getCurrentToken() == JSONToken.FIELD_NAME) && (parser.getText() == 'access_token')) {
           parser.nextToken();
-          access_token = parser.getText();
+          accessToken = parser.getText();
           break;
         }
       }
     }
-    return access_token;
+    return accessToken;
   }
 
   // Public in order to make it available to inheritance
