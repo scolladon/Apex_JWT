@@ -1,6 +1,13 @@
 JWT
 ===
 
+[![Code Climate](https://codeclimate.com/repos/57514f28f81a347ccb001afd/badges/60b11627153f864aca5a/gpa.svg)](https://codeclimate.com/repos/57514f28f81a347ccb001afd/feed)
+
+[![Test Coverage](https://codeclimate.com/repos/57514f28f81a347ccb001afd/badges/60b11627153f864aca5a/coverage.svg)](https://codeclimate.com/repos/57514f28f81a347ccb001afd/coverage)
+
+[![Issue Count](https://codeclimate.com/repos/57514f28f81a347ccb001afd/badges/60b11627153f864aca5a/issue_count.svg)](https://codeclimate.com/repos/57514f28f81a347ccb001afd/feed)
+
+
 Apex implementation of JWT and JWT Bearer flow.   Requires Summer 14 release for RSA-SHA256 support.
 
 Test Coverage : 94.59%
